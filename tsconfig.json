@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "outDir": "./",
+    "outDir": "./build",
+    "skipLibCheck": true,
     "alwaysStrict": true,
     "noImplicitThis": true,
     "noImplicitAny": true,

@@ -1,10 +1,8 @@
 /node_modules/
 
 # Compiler output
-/index.*
 /build/
 /coverage/
-/lib/
 
 .DS_Store
 logs

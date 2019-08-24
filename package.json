@@ -1,8 +1,8 @@
 {
   "name": "node-boilerplate",
   "version": "0.0.1",
-  "description": "node lib boilerplate",
-  "main": "index.js",
+  "description": "node cli boilerplate",
+  "bin": "build/index.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -watch",
@@ -11,12 +11,11 @@
     "prepare": "husky install && npm run lint && npm run test && npm run build"
   },
   "files": [
-    "/index.*",
-    "/lib/",
+    "/build/",
     "/src/"
   ],
   "keywords": [
-    "lib",
+    "cli",
     "boilerplate"
   ],
   "author": "mt",
@@ -29,6 +28,10 @@
   },
   "homepage": "https://github.com/mantou132/node-boilerplate#readme",
   "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^7.2.0"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.1",
