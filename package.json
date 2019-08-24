@@ -1,0 +1,44 @@
+{
+  "name": "node-boilerplate",
+  "version": "0.0.1",
+  "description": "node lib boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .ts --fix src/",
+    "test": "jest --coverage",
+    "prepublish": "npm run lint && npm run test && npm run build"
+  },
+  "keywords": [
+    "lib",
+    "boilerplate"
+  ],
+  "author": "mt",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.7.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
