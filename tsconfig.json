@@ -10,7 +10,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es6",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018"]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["**/*.test.ts"]
