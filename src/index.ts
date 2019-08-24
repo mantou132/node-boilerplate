@@ -1,27 +1,8 @@
-#!/usr/bin/env node
+import express from 'express';
 
-import path from 'path';
+const app = express();
+const port = 3000;
 
-import program from 'commander';
-import colors from 'colors';
+app.get('/', (req, res) => res.send('Hello World!'));
 
-import { add } from './lib/add';
-
-program.version(require(path.resolve(__dirname, '../package.json')).version || '', '-v, --version');
-
-program
-  .command('add <n1> [n2]')
-  .description('The sum of two numbers')
-  .action(async (n1: number, n2 = 0) => {
-    console.log(colors.green(String(add(n1, n2))));
-  });
-
-program.on('command:*', () => {
-  console.error(
-    colors.red('Invalid command: %s\nSee --help for a list of available commands.'),
-    program.args.join(' '),
-  );
-  process.exit(1);
-});
-
-program.parse(process.argv);
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));

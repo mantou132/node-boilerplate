@@ -1,6 +1,6 @@
 ## Node Boilerplate
 
-- commander
+- express
 - typescript
 - jest
 - eslint

@@ -1,8 +1,8 @@
 {
   "name": "node-boilerplate",
   "version": "0.0.1",
-  "description": "node cli boilerplate",
-  "bin": "build/index.js",
+  "description": "node express boilerplate",
+  "main": "/build/index.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -watch",
@@ -29,10 +29,10 @@
   "homepage": "https://github.com/mantou132/node-boilerplate#readme",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0",
-    "commander": "^7.2.0"
+    "express": "^4.17.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.12",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.1",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
