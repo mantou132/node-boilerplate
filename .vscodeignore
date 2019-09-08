@@ -1,0 +1,9 @@
+.vscode/**
+coverage/**
+src/**
+**/.gitignore
+**/.prettierrc.js
+**/.eslintignore
+**/.eslintrc.js
+jest.config.js
+**/tsconfig.json

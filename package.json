@@ -1,9 +1,30 @@
 {
-  "name": "node-boilerplate",
+  "name": "vscode-boilerplate",
+  "displayName": "Vscode Boilerplate",
   "version": "0.0.1",
-  "description": "node cli boilerplate",
-  "bin": "build/index.js",
+  "icon": "logo.png",
+  "description": "vscode extension boilerplate",
+  "publisher": "mantou",
+  "categories": [
+    "Other"
+  ],
+  "main": "build/index.js",
+  "activationEvents": [
+    "onCommand:extension.helloWorld"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
   "scripts": {
+    "vscode:prepublish": "npm run build",
     "build": "tsc",
     "watch": "tsc -watch",
     "lint": "tsc --noEmit && eslint --ext .ts --fix src/",
@@ -28,13 +49,11 @@
   },
   "homepage": "https://github.com/mantou132/node-boilerplate#readme",
   "license": "ISC",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "commander": "^7.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.1",
+    "@types/vscode": "^1.56.0",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
     "eslint": "^7.27.0",

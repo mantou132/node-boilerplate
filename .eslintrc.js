@@ -13,6 +13,7 @@ module.exports = {
   },
   rules: {
     'no-console': 1,
+    'import/no-unresolved': [2, { ignore: ['vscode'] }],
     // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/order.md
     'import/order': ['error', { 'newlines-between': 'always-and-inside-groups' }],
     '@typescript-eslint/no-var-requires': 'off',
