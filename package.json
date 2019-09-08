@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+		"watch": "tsc -watch",
     "lint": "eslint --ext .ts --fix src/",
     "test": "jest --coverage",
     "prepare": "npm run lint && npm run test && npm run build"
