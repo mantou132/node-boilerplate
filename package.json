@@ -10,6 +10,14 @@
     "test": "jest --coverage",
     "prepare": "npm run lint && npm run test && npm run build"
   },
+  "files": [
+    "/index.js",
+    "/index.js.map",
+    "/index.d.ts",
+    "/index.d.ts.map",
+    "/lib/",
+    "/src/"
+  ],
   "keywords": [
     "lib",
     "boilerplate"
