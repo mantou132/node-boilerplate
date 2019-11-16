@@ -1,8 +1,14 @@
+/native/index.node
+/native/index.d.ts
+/native/artifacts.json
+**/*~
+
 /node_modules/
 
 # Compiler output
 /index.*
 /build/
+/target/
 /coverage/
 /lib/
 
