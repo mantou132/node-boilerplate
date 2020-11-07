@@ -23,6 +23,14 @@
     "boilerplate"
   ],
   "author": "mt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mantou132/node-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mantou132/node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mantou132/node-boilerplate#readme",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.15",
